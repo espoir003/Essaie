@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventFuture - Réservation d'Événements</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">EventFuture</div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#reservation">Réserver</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Créez l'Événement du Futur</h1>
+            <p>Transformez vos rêves en réalité avec notre expertise événementielle</p>
+            <a href="#reservation" class="cta-button">Réserver Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/corporate.jpg" alt="Événements Corporatifs">
+                </div>
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Événements Corporatifs</h3>
+                <p>Séminaires, lancements de produits, conférences</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/wedding.jpg" alt="Mariages Futuristes">
+                </div>
+                <div class="service-icon">
+                    <i class="fas fa-rings-wedding"></i>
+                </div>
+                <h3>Mariages Futuristes</h3>
+                <p>Célébrations uniques et innovantes</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/concert.jpg" alt="Concerts & Festivals">
+                </div>
+                <div class="service-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Concerts & Festivals</h3>
+                <p>Expériences musicales immersives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages" class="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Une organisation impeccable et un design époustouflant!"</p>
+                <cite>- Marie L.</cite>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Notre mariage était exactement comme nous l'avions imaginé."</p>
+                <cite>- Pierre & Sophie</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réservation -->
+    <section id="reservation" class="booking">
+        <h2>Réserver un Événement</h2>
+        <form id="booking-form" class="booking-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name"><i class="fas fa-user"></i> Nom Complet</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" required>
+                <label for="phone"><i class="fas fa-phone"></i> Téléphone</label>
+            </div>
+            <div class="form-group">
+                <input type="date" id="event-date" name="event-date" required>
+                <label for="event-date"><i class="fas fa-calendar"></i> Date de l'Événement</label>
+            </div>
+            <div class="form-group">
+                <select id="event-type" name="event-type" required>
+                    <option value="">Sélectionnez le type d'événement</option>
+                    <option value="corporate">Événement Corporatif</option>
+                    <option value="wedding">Mariage</option>
+                    <option value="concert">Concert/Festival</option>
+                    <option value="other">Autre</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button">
+                <i class="fas fa-paper-plane"></i> Envoyer la Demande
+            </button>
+            <a href="payment.html" class="payment-button">
+                <i class="fas fa-wallet"></i> Procéder au Paiement
+            </a>
+        </form>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><i class="fas fa-location-dot"></i> 123 Avenue Futuriste, Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@eventfuture.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bouton Scroll Top -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

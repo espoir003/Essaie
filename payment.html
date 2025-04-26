@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - EventFuture</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">EventFuture</div>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Retour
+        </a>
+    </nav>
+
+    <!-- Section Paiement -->
+    <section class="payment-section">
+        <div class="payment-container">
+            <h1>Paiement Mobile Money</h1>
+            <div class="payment-options">
+                <div class="payment-option" data-provider="mpesa">
+                    <img src="images/mpesa-logo.png" alt="M-Pesa">
+                    <h3>M-Pesa</h3>
+                </div>
+                <div class="payment-option" data-provider="orange">
+                    <img src="images/orange-money-logo.png" alt="Orange Money">
+                    <h3>Orange Money</h3>
+                </div>
+                <div class="payment-option" data-provider="airtel">
+                    <img src="images/airtel-money-logo.png" alt="Airtel Money">
+                    <h3>Airtel Money</h3>
+                </div>
+            </div>
+
+            <form id="payment-form" class="payment-form">
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">
+                        <i class="fas fa-phone"></i> Numéro de téléphone
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="amount" name="amount" required>
+                    <label for="amount">
+                        <i class="fas fa-dollar-sign"></i> Montant (USD)
+                    </label>
+                </div>
+                <div class="payment-instructions">
+                    <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+                    <ol>
+                        <li>Sélectionnez votre opérateur mobile money</li>
+                        <li>Entrez votre numéro de téléphone</li>
+                        <li>Confirmez le montant à payer</li>
+                        <li>Vous recevrez un message USSD pour confirmer le paiement</li>
+                        <li>Entrez votre code PIN pour valider la transaction</li>
+                    </ol>
+                </div>
+                <button type="submit" class="submit-button payment-submit">
+                    <i class="fas fa-lock"></i> Payer Maintenant
+                </button>
+            </form>
+
+            <div class="security-info">
+                <i class="fas fa-shield-alt"></i>
+                <p>Paiement 100% sécurisé</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/payment.js"></script>
+</body>
+</html> 

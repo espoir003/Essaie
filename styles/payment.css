@@ -1,0 +1,144 @@
+.payment-section {
+    padding: 8rem 5% 5rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
+}
+
+.payment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.payment-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-light);
+    font-size: 2.5rem;
+    text-shadow: var(--glow-shadow);
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.payment-option {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.payment-option:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow-shadow);
+    border-color: var(--color-accent);
+}
+
+.payment-option.selected {
+    border-color: var(--color-accent);
+    background: rgba(138, 43, 226, 0.2);
+}
+
+.payment-option img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.payment-option h3 {
+    color: var(--color-light);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.payment-instructions {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.payment-instructions h3 {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.payment-instructions ol {
+    padding-left: 1.5rem;
+    color: var(--color-light);
+}
+
+.payment-instructions li {
+    margin: 0.5rem 0;
+}
+
+.payment-submit {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    background: var(--color-accent);
+}
+
+.security-info {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.security-info i {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+}
+
+.back-button {
+    color: var(--color-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 1.5rem;
+    }
+
+    .payment-container h1 {
+        font-size: 2rem;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+} 
